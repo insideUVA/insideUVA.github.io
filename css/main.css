@@ -21,8 +21,12 @@ body {
 	overflow: scroll;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+}
 
-
+#bluecolored {
+	background-color: #131b3e;
+	padding-top: 35%;
+	width: 70%;
 }
 
 #sfDIV{
@@ -182,52 +186,89 @@ p {
 }
 
 
+.button {
+    background-color: #131b3e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+		border-radius: 12px;
+}
 
-/* Sidebar Styles */
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
 
-.leftside {
-  position: absolute;
-  top: 20%;
-  width: 37%;
-  margin: 0;
-  padding-left: 5%;
-  list-style: none;
+.button:hover {
+    background-color: #131b3e;
+    color: #eb8f3e;
+}
+
+.big-button {
+    background-color: #131b3e;
+		width: 50%;
+		height: 70%;
+    color: white;
+    /* border: 1px solid black; /* Gray */ */
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-size: 40px;
+}
+
+.big-button:hover {
+    background-color: #eb8f3e; /* Gray */
+    color: white;
+		}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #131b3e;
 	color: white;
-	background-color: #131b3e;
 }
 
-.leftside li {
-  text-indent: 20px;
-  line-height: 40px;
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #131b3e;
+	color: white;
 }
 
-.leftside li a {
-  display: block;
-  text-decoration: none;
-  color: #999999;
+.right e:hover {
+		font-style: italic;
 }
 
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
 
-
-@media(min-width:768px) {
-  #wrapper {
-    padding-left: 0;
-  }
-  #wrapper.toggled {
-    padding-left: 250px;
-  }
-  #sidebar-wrapper {
-    width: 0;
-  }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-  }
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
 }
