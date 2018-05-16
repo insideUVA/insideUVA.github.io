@@ -95,39 +95,46 @@ zz {
 
 h2 {
 	font-family: 'Adobe Caslon Pro', serif;
-	font-size: 24px;
-	font-style: regular;
+	font-size: 30px;
+	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 24px;
   padding-bottom: 3px;
+	padding-top: 20px;
   color: black;
 }
 h3 {
-	font-family: 'Garamond', 'EB Garamond' serif;
-	font-size: 18px;
+	font-family: 'Adobe Caslon Pro', serif;
+	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 700;
-	line-height: 20px;
-	padding-bottom: 7px;
-
+	font-weight: 500;
+	line-height: 24px;
+  padding-bottom: 3px;
+	padding-top: 10px;
+  color: black;
 }
+
 h4 {
-	font-family: 'Garamond', 'EB Garamond' serif;
-	font-size: 16px;
+	font-family: 'Adobe Caslon Pro', serif;
+	font-size: 24px;
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 17px;
+	line-height: 24px;
+  padding-bottom: 3px;
+	padding-top: 10px;
+  color: black;
 }
+
 h5 {
-	font-family: 'Garamond', 'EB Garamond' serif;
-	font-size: 16px;
-	font-style: regular;
+	font-family: 'Bodoni', serif;
+	font-size: 30px;
+	font-style: normal;
 	font-variant: normal;
 	font-weight: 800;
-	line-height: 19px;
+	line-height: 30px;
 	padding-top: 6px;
 }
 h6 {
@@ -305,5 +312,8 @@ p {
 }
 
 .left2 i:hover {
+	text-decoration: underline;
+}
+.right2 i:hover {
 	text-decoration: underline;
 }
