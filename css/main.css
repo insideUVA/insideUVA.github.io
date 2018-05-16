@@ -25,7 +25,7 @@ body {
 
 #bluecolored {
 	background-color: #131b3e;
-	padding-top: 35%;
+	padding-top: 25%;
 	width: 70%;
 }
 
@@ -48,6 +48,17 @@ body {
 	margin-right: 250px;
 	overflow: scroll;
 	padding-top: 8%;
+}
+.widget {
+	color: #000000;
+	background-color: #ffffff;
+	margin-left: 25px;
+}
+
+.list-group {
+	color: #000000;
+	background-color: #ffffff;
+	margin-left: 25px;
 }
 
 
@@ -72,7 +83,7 @@ h1 {
 }
 
 zz {
-	font-family: 'Adobe Caslon Pro'  serif;
+	font-family: 'Adobe Caslon Pro', serif;
 	font-size: 40px;
 	font-style: bold;
 	font-variant: normal;
@@ -82,14 +93,14 @@ zz {
 }
 
 h2 {
-	font-family: 'Garamond', 'EB Garamond' serif;
-	font-size: 18px;
+	font-family: 'Adobe Caslon Pro', serif;
+	font-size: 24px;
 	font-style: regular;
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 15px;
   padding-bottom: 3px;
-  color: #eb8f3e;
+  color: black;
 }
 h3 {
 	font-family: 'Garamond', 'EB Garamond' serif;
@@ -168,11 +179,6 @@ p {
     font-size: 22px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #eb8f3e;
-    color: white;
-}
 
 /* Add an active class to highlight the current page */
 .active {
@@ -272,3 +278,31 @@ p {
 .centered img {
   width: 150px;
   border-radius: 50%;
+}
+
+
+.column {
+    float: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left2 {
+    width: 20%;
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+.right2 {
+    width: 65%;
+		background-color: #ffffff;
+		color: #000000;
+}
+
+.left2 i:hover {
+	text-decoration: underline;
+}
