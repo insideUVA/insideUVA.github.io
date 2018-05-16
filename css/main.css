@@ -169,10 +169,10 @@ p {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .topnav a:hover {
     background-color: #eb8f3e;
     color: white;
-}
+} */
 
 /* Add an active class to highlight the current page */
 .active {
