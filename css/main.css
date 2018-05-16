@@ -255,7 +255,8 @@ p {
 }
 
 .right e:hover {
-		font-style: italic;
+		/* font-style: italic; */
+		color: #eb8f3e;
 }
 
 /* If you want the content centered horizontally and vertically */
