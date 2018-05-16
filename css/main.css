@@ -21,8 +21,12 @@ body {
 	overflow: scroll;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+}
 
-
+#bluecolored {
+	background-color: #131b3e;
+	padding-top: 35%;
+	width: 70%;
 }
 
 #sfDIV{
@@ -56,8 +60,9 @@ img {
 	max-width:100%;
 }
 
+
 h1 {
-	font-family: 'Bodoni 72'  serif;
+	font-family: 'Adobe Caslon Pro'  serif;
 	font-size: 40px;
 	font-style: bold;
 	font-variant: normal;
@@ -65,6 +70,17 @@ h1 {
 	line-height: 40px;
 	padding-bottom: 10px;
 }
+
+zz {
+	font-family: 'Adobe Caslon Pro'  serif;
+	font-size: 40px;
+	font-style: bold;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 40px;
+	padding-bottom: 10px;
+}
+
 h2 {
 	font-family: 'Garamond', 'EB Garamond' serif;
 	font-size: 18px;
@@ -169,40 +185,89 @@ p {
     display: none;
 }
 
-.sidenav{
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	 width: 160px; /* Set the width of the sidebar */
-	 position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	 z-index: 1; /* Stay on top */
-	 top: 0; /* Stay at the top */
-	 left: 0;
-	 background-color: #131b3e; /* Black */
-	 overflow-x: hidden; /* Disable horizontal scroll */
-	 padding-top: 20px;
-}
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
+.button {
+    background-color: #131b3e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
     text-decoration: none;
-    font-size: 22px;
-		color: white;
-    /* color: #818181; */
-    display: block;
+    display: inline-block;
+    font-size: 32px;
+		border-radius: 12px;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
-/* Style page content */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+.button:hover {
+    background-color: #131b3e;
+    color: #eb8f3e;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.big-button {
+    background-color: #131b3e;
+		width: 50%;
+		height: 70%;
+    color: white;
+    /* border: 1px solid black; /* Gray */ */
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+		font-size: 40px;
 }
+
+.big-button:hover {
+    background-color: #eb8f3e; /* Gray */
+    color: white;
+		}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #131b3e;
+	color: white;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #131b3e;
+	color: white;
+}
+
+.right e:hover {
+		font-style: italic;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
